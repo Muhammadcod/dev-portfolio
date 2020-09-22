@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "title": "Would You Rather App",
+    "description": "",
+    "src": "../images/gallery/g-1.jpg",
+    "url": "",
+    "tech": ["React", "Redux", "Redux thunk", "React Redux", "React Router"]
+  },
+  {
+    "id": "2",
+    "title": "Book Tracking App",
+    "description": "",
+    "src": "../images/gallery/g-1.jpg",
+    "url": "",
+    "tech": ["React", "React Router", "API"]
+  },
+  {
+    "id": "3",
+    "title": "Online Fashion Store front",
+    "description": "https://privatelabelng.shop/",
+    "src": "../images/gallery/g-1.jpg",
+    "url": "",
+    "tech": ["Gatsby", "API"]
+  },
+  {
+    "id": "4",
+    "title": "Google Clone",
+    "description": "https://limitless-stream-79681.herokuapp.com/",
+    "src": "../images/gallery/g-1.jpg",
+    "url": "",
+    "tech": ["React", "Google Knowledge API"]
+  }
+]
