@@ -7,9 +7,9 @@ import SEO from "../components/seo"
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <div className="about-page-content">
+    <div id="about-page-content">
       <section id="story">
-        <div className="container">
+        <div className="container mb-4">
           <div className="sub-title">
             <h1>My Story</h1>
           </div>
@@ -45,7 +45,26 @@ const About = () => (
           </div>
         </div>
       </section>
-      <section id="skill"></section>
+      <section id="skill">
+        <div className="container">
+          <div className="sub-title">
+            <h1>Thecnologies</h1>
+          </div>
+          <div className="">
+            <div class="container">
+              <div class="row g-2">
+                <div class="col-6">
+                  <div class="p-3 border d-flex bg-light justify-content-between">
+                    <span className="center">A</span>
+                    <span className="">A</span>
+                    <span className="center">A</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="works"></section>
     </div>
   </Layout>

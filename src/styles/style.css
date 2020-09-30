@@ -1,5 +1,4 @@
 header {
-  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
   height: 70px;
@@ -11,19 +10,25 @@ header {
 }
 
 header span {
-  border: 1px solid black;
-  height: 30px;
+  height: 43px;
   line-height: 25px;
   padding: 0 10px;
 }
-
-#hero {
+#brand {
+  padding-top: 8px;
+  padding-left: 12px;
+  margin-left: 25px;
+  width: 40px;
+  border: 1px solid black;
+}
+#hero,
+#about-page-content {
   height: 100vh;
   padding-top: 100px;
 }
 
 .hero-header {
-  margin-bottom: 70px;
+  margin-bottom: 120px;
   margin-top: 30px;
   /* padding-left: 0; */
 }
@@ -45,17 +50,29 @@ header span {
   /* padding-left: 0; */
 }
 
-section,
+.story-paragraph {
+  column-count: 2;
+}
 .way {
   border: 1px solid blue;
 }
+.work {
+  margin-bottom: 25px;
+}
+/* .lo {
+  height: 300px;
+} */
 
 .sky {
   border-radius: 5px;
   -webkit-box-shadow: 6px 0px 6px -6px black;
   -moz-box-shadow: 6px 0px 6px -6px black;
   box-shadow: 6px 0px 6px -6px black;
+  padding: 0;
   /* position: relative; */
+}
+div.gatsby-image-wrapper picture img {
+  position: relative !important;
 }
 
 /* .two {
@@ -82,6 +99,8 @@ li {
 
 .title {
   display: flex;
+  font-size: 24px;
+  /* letter-spacing: -2px; */
   /* line-height: ; */
 }
 
@@ -115,142 +134,17 @@ li {
   margin-top: 5rem;
 }
 
-/*HERO*/
-
-/* 
-* 
-
-
-.hero-container {
-  display: flex;
+.work-card .work-title {
+  font-size: 20px;
 }
-.side {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #fff;
-  height: 100vh;
+.work-card .work-description {
+  font-size: 16px;
 }
-.hero-left {
-   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(255, 255, 225, 0.1)),
-    url(../images/city.jpg); 
-  background-size: cover;
-  background-position: center;
-  flex: 1;
-  padding: 1rem;
-  transition: all 0.2s ease-in-out;
-  padding: 100px 0 100px 0;
-}
-.hero-right {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(164, 222, 102, 0.1)),
-    url(../images/Aare.svg);
-  background-size: cover;
-  background-position: center;
-  flex: 1;
-  padding: 1rem;
-  transition: all 0.2s ease-in-out;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-72.66%, -50%);
-  height: 100%;
-}
-.centered a {
-  margin-left: 9px;
-}
-.job-title {
-  font-size: 2vw;
-  line-height: 2vw;
-  margin-left: 9px;
-}
-
-.hero-paragraph {
-  margin-left: 9px;
-  margin-bottom: 70px;
-  max-width: 25vw;
-  line-height: 22px;
-  border: 1px solid red;
-}
-
-.hero-name {
-  font-size: 8vw;
-  line-height: 8vw;
-}
-.hero-wrap {
-  padding: 85px 0 50px 0;
-}
-.about-page-content section {
-  padding: 120px;
-}
-
-.story-paragraph {
-  column-count: 2;
-} */
-
-/* section {
-  border: 1px solid blue;
-  min-height: 100vh;
-  padding: 50px 0;
-}
-header {
-  padding: 15px 40px;
-}
-li {
-  list-style-type: none;
-  padding-left: 0;
-}
-.project-wrap {
-  height: 20rem;
-}
-.project-wrap .description {
-  height: 7rem;
-}
-.project-wrap .technology {
-  margin-top: 5rem;
-}
-
-.dart {
-  position: relative;
+.work-card .des {
+  height: 120px;
   width: 300px;
-  height: 400px;
 }
-.dart .face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.work-card .work-tech {
 }
-.dart .face .face1 {
-  top: 0;
-  left: 0;
-  transition-property: left, z-index, transform;
-  transition-delay: 0s, 0.5s, 0.5s;
-  transition-duration: 0.5s, 0s, 0.5s;
-  z-index: 2;
-  transform: translate(-10px, -10px);
-}
-.dart:hover .face.face1 {
-  transition-property: transform, z-index, left;
-  transition-delay: 0s, 0.5s, 0.5s;
-  transition-duration: 0.5s, 0s, 0.5s;
-  transform: translate(-170px, -10px);
-  z-index: 1;
-  left: -160px;
-}
-.dart .face .face1 .one {
-  max-width: 100%;
-}
-.dart .face .face {
-   transition-property: transform, z-index, left;
-  transition-delay: 0s, 0.5s, 0.5s;
-  transition-duration: 0.5s, 0s, 0.5s;
-  background: #111;
-}
-.dart .face .face .content {
-  padding: 20px;
-  box-sizing: border-box;
-} */
+
+/*HERO*/
