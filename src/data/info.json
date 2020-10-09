@@ -3,24 +3,27 @@
     "id": "1",
     "title": "Would You Rather App",
     "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
-    "src": "../images/gallery/g-1.jpg",
-    "url": "",
+    "src": "../images/CRM.png",
+    "url": "https://frosty-hodgkin-05e9fc.netlify.app",
+    "repo": "https://github.com/Muhammadcod/would-you-rather",
     "tech": ["React", "Redux", "Redux thunk", "React Redux", "React Router"]
   },
   {
     "id": "2",
-    "title": "Book Tracking App",
-    "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
+    "title": "My Reads",
+    "description": "A book tracking app Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
     "src": "../images/Book-2.png",
-    "url": "https://warm-springs-43664.herokuapp.com/",
+    "url": "https://warm-springs-43664.herokuapp.com",
+    "repo": "https://github.com/Muhammadcod/myreads-bookshelf-app",
     "tech": ["React", "React Router", "API"]
   },
   {
     "id": "3",
-    "title": "Online Fashion Store front",
-    "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
+    "title": "PrivateLabelNG",
+    "description": "Online Fashion Store front Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
     "src": "../images/Private-Label NG.png",
     "url": "https://privatelabelng.shop/",
+    "repo": "https://github.com/Muhammadcod/Fashion_Store",
     "tech": ["Gatsby", "API"]
   },
   {
@@ -29,6 +32,8 @@
     "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
     "src": "../images/Google-Replica.png",
     "url": "https://limitless-stream-79681.herokuapp.com/",
+    "repo": "https://github.com/Muhammadcod/Goggle-clone",
+
     "tech": ["React", "Google Knowledge API"]
   },
   {
@@ -37,6 +42,25 @@
     "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
     "src": "../images/Productly.png",
     "url": "https://muhammad-bashir.herokuapp.com/Productly.htm",
+    "repo": "https://github.com/Muhammadcod/Portfolio",
     "tech": ["HTML", "CSS"]
+  },
+  {
+    "id": "6",
+    "title": "Chirper App",
+    "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
+    "src": "../images/Productly.png",
+    "url": "https://chirperapp.netlify.app/",
+    "repo": "https://github.com/Muhammadcod/reactnd-chirper-app",
+    "tech": ["React", "Redux", "React Router"]
+  },
+  {
+    "id": "7",
+    "title": "todo goals",
+    "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
+    "src": "../images/Productly.png",
+    "url": "https://muhammad-bashir.herokuapp.com/Productly.htm",
+    "repo": "https://github.com/Muhammadcod/Portfolio",
+    "tech": ["React", ""]
   }
 ]
