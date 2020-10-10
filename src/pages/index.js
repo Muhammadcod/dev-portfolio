@@ -90,7 +90,7 @@ const IndexPage = () => {
       <section className="">
         <div className="title p-3">Recent Works</div>
         <div className="container px-5 ">
-          {data.allInfoJson.nodes.slice(1, 4).map(item => (
+          {data.allInfoJson.nodes.slice(0, 3).map(item => (
             <div className="container way  work">
               <div class="row  p-lg-2 p-sm-0 p-md-2 lo position-relative">
                 <div class="col-lg-6 col-12 tell two ">
@@ -101,18 +101,18 @@ const IndexPage = () => {
                       <p className="work-description">{item.description}</p>
                     </div>
                   </div>
-                  <div className="work-tech">
+                  <div className="work-tech  mb-2">
                     {item.tech.map(tec => (
                       <li className="small">{tec.toLowerCase()}</li>
                     ))}
                   </div>
-                  <span className="d-flex">
-                    <span>
-                      <a href={item.url}>demo</a>
+                  <span className="d-flex links">
+                    <span className='mr-2'>
+                      <a href={item.url[0]}>demo</a>
                     </span>
                     <span>
                       {/* {console.log("repo", item)} */}
-                      <a href={item.repo}>code</a>
+                      <a href={item.url[1]}>code</a>
                     </span>
                   </span>
                 </div>
@@ -130,25 +130,25 @@ const IndexPage = () => {
         <div class="container">
           <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
             {data.allInfoJson.nodes
-              .slice(Math.max(data.allInfoJson.nodes.length - 3, 3))
+              .slice(3)
               .map(item => (
                 <div class="col">
                   <div class="p-3 border project-wrap">
                     <h4 className="">{item.title}</h4>
                     <p className="description">{item.description}</p>
                     <div className="technology">
-                      <ul class="nav">
+                      <ul class="nav work-tech  mb-2">
                         {item.tech.map(tec => (
                           <li class="nav-item mr-3 work-tech">{tec}</li>
                         ))}
                       </ul>
                     </div>
-                    <span className="d-flex">
-                      <span>
-                        <a href={item.repourl}>code</a>
+                    <span className="d-flex links ">
+                      <span className='mr-2'>
+                        <a href={item.url[0]}>code</a>
                       </span>
                       <span>
-                        <a href={item.url}>demo</a>
+                        <a href={item.url[1]}>demo</a>
                       </span>
                     </span>
                   </div>

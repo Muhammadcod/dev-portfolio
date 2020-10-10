@@ -120,6 +120,9 @@ header span {
  }
 }  */
 
+.links span a{
+  text-decoration: none;
+}
 .hero-header h2 {
   font-size: 70px;
   margin-bottom: 16px !important;
