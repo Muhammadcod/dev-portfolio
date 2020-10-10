@@ -145,10 +145,10 @@ const IndexPage = () => {
                     </div>
                     <span className="d-flex links ">
                       <span className='mr-2'>
-                        <a href={item.url[0]}>code</a>
+                        <a href={item.url[0]}>demo</a>
                       </span>
                       <span>
-                        <a href={item.url[1]}>demo</a>
+                        <a href={item.url[1]}>code</a>
                       </span>
                     </span>
                   </div>
