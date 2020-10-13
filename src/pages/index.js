@@ -53,7 +53,7 @@ const IndexPage = () => {
               in building exceptional websites, applications, and <br />
               everything in between.
             </p>
-            <span className="  call-to-action ">Hire me na</span>
+            <span className=" ml-1  call-to-action btn btn-dark  " ><a href="mailto:adebayomuhammad47@gmail.com">Hire me</a></span>
           </div>
         </div>
 
