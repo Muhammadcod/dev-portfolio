@@ -20,7 +20,7 @@
     "title": "PrivateLabelNG",
     "description": "A minimalist online fashion website built with Gatsby showcases company clothing lines, also includes a blog page that fetches company blogs by making Api calls to fetch medium blogs.",
     "src": "../images/Private-Label NG.png",
-    "url": ["https://privatelabelng.shop/", "https://github.com/Muhammadcod/Fashion_Store"],
+    "url": ["https://privatelabelng.shop/", ""],
     "tech": ["Gatsby", "API"]
   },
   {

@@ -51,6 +51,11 @@ header span {
     padding-top: 100px;
 }
 
+.landing,
+.recent-works {
+    margin-bottom: 20px;
+}
+
 .hero-header {
     /* margin-bottom: 120px; */
     margin-top: 30px;
@@ -118,12 +123,7 @@ header span {
     background-color: #ffffff;
 }
 
-/* @media all and (max-width:30em){
- a.button1{
- display:block;
- margin:0.4em auto;
- }
-}  */
+
 a {
     text-decoration: none;
 }
@@ -139,10 +139,6 @@ a {
 
 .story-paragraph {
     column-count: 2;
-}
-
-.way {
-    border: 1px solid #aaaa92;
 }
 
 .work {

@@ -39,7 +39,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section id="hero" className="">
+      <section id="hero" className="landing">
         <div className="sister"></div>
         <div className="container hero-header p-0">
           <div>
@@ -87,26 +87,47 @@ const IndexPage = () => {
         </span>
       </section>
 
-      <section className="">
-        <div className="title p-3">Recent Works</div>
-        <div className="container px-5 ">
-          {data.allInfoJson.nodes.slice(0, 3).map(item => (
-            <div className="container way  work">
-              <div class="row  p-lg-2 p-sm-0 p-md-2 lo position-relative">
-                <div class="col-lg-6 col-12 tell two ">
-                  <div className="work-card">
-                    <h5 className="work-title">{item.title}</h5>
+      <section id="story">
+        <div className="container mb-4">
+          <div className="sub-title">
+            <h1>My Story</h1>
+          </div>
+          <div className="story-paragraph">
+            Muhammad bashir is a Front-End Web Developer based in Nigeria. He
+            loves designing & coding simple aesthetic designs, playing football,
+            traveling, and watching movies. Presently, he works as a freelance
+            web developer. He has a BSc in Chemistry from the University of
+            Ilorin, a PGD and Masters Degree in Chemical and Polymer Engineering
+            at Lagos State University. For more info, check out his portfolio. I
+            have a diverse set of skills i employ in coding pixel perfect design
+            by writing simple and well structured HTML combined with reasonable
+            and efficient CSS with it various transpilers. i am also well versed
+            with JavaScript library ( React ), which i use in building complex UI's.
+          </div>
+        </div>
+      </section>
 
-                    <div className="des">
-                      <p className="work-description">{item.description}</p>
+      <div id='work'>
+        <section className="recent-works mt-5 pt-4">
+          <div className="title p-3">Recent Works</div>
+          <div className="container px-5 ">
+            {data.allInfoJson.nodes.slice(0, 3).map(item => (
+              <div className="container way  work">
+                <div className="row  p-lg-2 p-sm-0 p-md-2 lo position-relative">
+                  <div className="col-lg-6 col-12 tell two ">
+                    <div className="work-card">
+                      <h5 className="work-title">{item.title}</h5>
+
+                      <div className="des">
+                        <p className="work-description">{item.description}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="work-tech  mb-2">
-                    {item.tech.map(tec => (
-                      <li className="small">{tec.toLowerCase()}</li>
-                    ))}
-                  </div>
-                  <span className="d-flex links">
+                    <div className="work-tech  mb-2">
+                      {item.tech.map(tec => (
+                        <li className="small">{tec.toLowerCase()}</li>
+                      ))}
+                    </div>
+                    <span className="d-flex links">
                     <span className='mr-2'>
                       <a href={item.url[0]}>demo</a>
                     </span>
@@ -115,35 +136,35 @@ const IndexPage = () => {
                       <a href={item.url[1]}>code</a>
                     </span>
                   </span>
-                </div>
-                <div class="col-lg-6 col-12 border two sky">
-                  <Img fluid={item.src.childImageSharp.fluid} alt="products" />
+                  </div>
+                  <div className="col-lg-6 col-12  two sky">
+                    <Img fluid={item.src.childImageSharp.fluid} alt="products" />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
 
-      <section>
-        <div className="title p-3">Other Works</div>
-        <div class="container">
-          <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
-            {data.allInfoJson.nodes
-              .slice(3)
-              .map(item => (
-                <div class="col">
-                  <div class="p-3 border project-wrap">
-                    <h4 className="">{item.title}</h4>
-                    <p className="description">{item.description}</p>
-                    <div className="technology">
-                      <ul class="nav work-tech  mb-2">
-                        {item.tech.map(tec => (
-                          <li class="nav-item mr-3 work-tech">{tec}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <span className="d-flex links ">
+        <section className="mt-5">
+          <div className="title p-3">Other Works</div>
+          <div className="container">
+            <div className="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+              {data.allInfoJson.nodes
+                .slice(3)
+                .map(item => (
+                  <div className="col">
+                    <div className="p-3 border project-wrap">
+                      <h4 className="">{item.title}</h4>
+                      <p className="description">{item.description}</p>
+                      <div className="technology">
+                        <ul className="nav work-tech  mb-2">
+                          {item.tech.map(tec => (
+                            <li className="nav-item mr-3 work-tech">{tec}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <span className="d-flex links ">
                       <span className='mr-2'>
                         <a href={item.url[0]}>demo</a>
                       </span>
@@ -151,12 +172,15 @@ const IndexPage = () => {
                         <a href={item.url[1]}>code</a>
                       </span>
                     </span>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+
 
       <section>
         <div className="footer"></div>
