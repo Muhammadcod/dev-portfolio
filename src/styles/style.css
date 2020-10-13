@@ -139,6 +139,11 @@ a {
 
 .story-paragraph {
     column-count: 2;
+    /*width: 800px;*/
+    margin: 30px auto;
+    padding-left: 60px;
+    padding-right: 60px;
+
 }
 
 .work {

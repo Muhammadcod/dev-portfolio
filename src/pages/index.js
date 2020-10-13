@@ -7,7 +7,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
-  faInstagram,
+  faInstagram
 } from "@fortawesome/free-brands-svg-icons"
 
 import Layout from "../components/layout"
@@ -15,26 +15,26 @@ import SEO from "../components/seo"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-    query {
-      allInfoJson {
-        nodes {
-          id
-          url
-          tech
-          title
-          description
-          src {
-            childImageSharp {
-              fluid {
-                src
-                srcSet
-                base64
+      query {
+          allInfoJson {
+              nodes {
+                  id
+                  url
+                  tech
+                  title
+                  description
+                  src {
+                      childImageSharp {
+                          fluid {
+                              src
+                              srcSet
+                              base64
+                          }
+                      }
+                  }
               }
-            }
           }
-        }
       }
-    }
   `)
   return (
     <Layout>
@@ -53,7 +53,8 @@ const IndexPage = () => {
               in building exceptional websites, applications, and <br />
               everything in between.
             </p>
-            <span className=" ml-1  call-to-action btn btn-dark  " ><a href="mailto:adebayomuhammad47@gmail.com">Hire me</a></span>
+            <span className=" ml-1  call-to-action btn btn-dark  "><a
+              href="mailto:adebayomuhammad47@gmail.com">Hire me</a></span>
           </div>
         </div>
 
@@ -89,20 +90,31 @@ const IndexPage = () => {
 
       <section id="story">
         <div className="container mb-4">
-          <div className="sub-title">
-            <h1>My Story</h1>
+          <div className="title">
+            My Story
           </div>
-          <div className="story-paragraph">
-            Muhammad bashir is a Front-End Web Developer based in Nigeria. He
-            loves designing & coding simple aesthetic designs, playing football,
-            traveling, and watching movies. Presently, he works as a freelance
-            web developer. He has a BSc in Chemistry from the University of
-            Ilorin, a PGD and Masters Degree in Chemical and Polymer Engineering
-            at Lagos State University. For more info, check out his portfolio. I
-            have a diverse set of skills i employ in coding pixel perfect design
+          <div className="container  story-paragraph">
+            Muhammad bashir is a Front-End Developer based in Lagos Nigeria. I
+            started out as chemist after completing my education (BSc in Chemistry)
+            from the University of Ilorin. I furthered my studies into chemical
+            engineering where i learnt to see what i had learnt in my first degree
+            on a large scale, but i had always loved and saw myself as a programmer,
+            to be honest a hacker, but going into it i came to fall in love with
+            web development. The challenge that comes with building simple to complex
+            aesthetic designs and engaging product has been one of the few things
+            that keeps me alive apart from the major things in my life, Allah,
+            my wife, daughter and family. Presently, i work as a freelance frontend
+            developer and try as much as possible to learn one new stuff everyday.
+            I would like to work with a company with top IT professionals
+            with great minds who can really help me grow. I love playing football,
+            PS games (especially when i think no one is better at it than i am),
+            traveling, and watching movies.For more info, check out my works. I
+            have a diverse set of skills i employ in building pixel perfect design
             by writing simple and well structured HTML combined with reasonable
             and efficient CSS with it various transpilers. i am also well versed
             with JavaScript library ( React ), which i use in building complex UI's.
+            <br />
+            Skills: HTML5, CSS3, JavaScript, React, Redux, Gatsby.
           </div>
         </div>
       </section>
@@ -179,7 +191,6 @@ const IndexPage = () => {
           </div>
         </section>
       </div>
-
 
 
       <section>
