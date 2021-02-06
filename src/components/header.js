@@ -3,7 +3,7 @@
 import React from "react"
 
 const Header = () => (
-  <header>
+  <header className='border'>
     <span id="brand">M</span>
     <span>
       <ul class="nav">

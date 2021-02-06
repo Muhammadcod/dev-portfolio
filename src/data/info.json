@@ -1,58 +1,67 @@
 [
   {
     "id": "1",
+    "title": "Admin Page",
+    "description": "Engineer Team Admin Page",
+    "src": "../images/Engineer-Admin.png",
+    "url": ["https://boring-swirles-79b164.netlify.app", "https://github.com/Muhammadcod/Engineer-Task"],
+    "tech": ["React", "Axios", "RestApi"]
+  },
+  {
+    "id": "2",
     "title": "Would You Rather App",
     "description": "A question based game app built as a requirement of the completion of the udacity react nanodegree program",
-    "src": "../images/CRM.png",
+    "src": "../images/would-you-rather.png",
     "url": ["https://frosty-hodgkin-05e9fc.netlify.app", "https://github.com/Muhammadcod/would-you-rather"],
     "tech": ["React", "Redux", "Redux thunk", "React Router"]
   },
   {
-    "id": "2",
-    "title": "My Reads",
-    "description": "A book tracking app which enables users to search for books in a database. Selected books are kept and tracked in predefined categories",
-    "src": "../images/Book-2.png",
-    "url": ["https://warm-springs-43664.herokuapp.com", "https://github.com/Muhammadcod/myreads-bookshelf-app"],
-    "tech": ["React", "React Router", "API"]
-  },
-  {
     "id": "3",
     "title": "PrivateLabelNG",
-    "description": "A minimalist online fashion website built with Gatsby showcases company clothing lines, also includes a blog page that fetches company blogs by making Api calls to fetch medium blogs.",
-    "src": "../images/Private-Label NG.png",
+    "description": "A minimalist online fashion website showcasing company clothing lines, incorporated with a blog page of latest fashion trends.",
+    "src": "../images/private.png",
     "url": ["https://privatelabelng.shop/", ""],
     "tech": ["Gatsby", "API"]
   },
   {
     "id": "4",
-    "title": "Google Clone",
-    "description": "A search app",
-    "src": "../images/Google-Replica.png",
-    "url": ["https://limitless-stream-79681.herokuapp.com/", "https://github.com/Muhammadcod/Goggle-clone"],
-    "tech": ["React", "Google Knowledge API"]
+    "title": "Github Clone",
+    "description": "A Github clone",
+    "src": "../images/git.png",
+    "url": ["https://goofy-ritchie-fefb85.netlify.app/", "https://github.com/Muhammadcod/git-clone"],
+    "tech": ["HTML", "CSS", "JavaScript", "Graphql"]
   },
   {
     "id": "5",
-    "title": "Productly Website",
-    "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
-    "src": "../images/Productly.png",
-    "url": ["https://muhammad-bashir.herokuapp.com/Productly.htm","https://github.com/Muhammadcod/Portfolio"],
-    "tech": ["HTML", "CSS"]
+    "title": "My Reads",
+    "description": "A book tracking app with predefined book keeping categories",
+    "src": "../images/Book-4.png",
+    "url": ["https://warm-springs-43664.herokuapp.com", "https://github.com/Muhammadcod/myreads-bookshelf-app"],
+    "tech": ["React", "React Router", "API"]
   },
   {
     "id": "6",
     "title": "Chirper App",
     "description": "A simple twitter-like replica",
-    "src": "../images/Productly.png",
-    "url": ["https://chirperapp.netlify.app/","https://github.com/Muhammadcod/reactnd-chirper-app"],
+    "src": "../images/chirpa.png",
+    "url": ["https://chirperapp.netlify.app","https://github.com/Muhammadcod/reactnd-chirper-app"],
     "tech": ["React", "Redux", "React Router"]
   },
   {
     "id": "7",
-    "title": "todo goals",
-    "description": "Adipiscing cras cursus eleifend est malesuada molestie nunc phasellus porta posuere suspendisse ut. Aenean arcu at bibendum egestas",
+    "title": "Google Clone",
+    "description": "A search app",
+    "src": "../images/Google-Replica.png",
+    "url": ["https://limitless-stream-79681.herokuapp.com", "https://github.com/Muhammadcod/Goggle-clone"],
+    "tech": ["React", "Google Knowledge API"]
+  },
+  {
+    "id": "8",
+    "title": "Mobile Flashcards",
+    "description": "A Mobile Flashcards",
     "src": "../images/Productly.png",
-    "url": ["https://muhammad-bashir.herokuapp.com/Productly.htm","https://github.com/Muhammadcod/Portfolio"],
-    "tech": ["React"]
+    "url": ["https://expo.io/@mubhi/projects/mobile-flashcards","https://github.com/Muhammadcod/Native-apps"],
+    "tech": ["React-native", "React Navigation", "Redux"]
   }
+
 ]
