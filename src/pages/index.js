@@ -76,7 +76,7 @@ const IndexPage = () => {
                         <FontAwesomeIcon icon={faExternalLinkAlt} className='' />
                       </a>
                     </h5>
-                    <p className="card-text modify__text" style={{width: `388px`}}>{item.description}</p>
+                    <p className="card-text modify__text">{item.description}</p>
                     <a href={item.url[1] ? item.url[1] : '/'}
                        className={`button ${item.url[1] ? "" : "disabled-link"}`}>
                       <button className='project--links btn btn-light' >code</button>

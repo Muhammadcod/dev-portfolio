@@ -9,12 +9,7 @@ const Header = () => (
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#work">
-            Work
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">
-            About
+            Works
           </a>
         </li>
       </ul>
