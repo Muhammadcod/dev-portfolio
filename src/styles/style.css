@@ -4,9 +4,6 @@ body {
     color: #0e1318;
     font-family: 'Poppins', sans-serif;
 }
-.card-img-overlay {
-    background:  rgba(0, 0, 0, 0.6);
-}
 
 
 header {
@@ -217,51 +214,11 @@ li {
     margin-right: 10px;
 }
 
-
-.project-wrapper {
-    position: relative;
-    width: 100%;
-    height: 365px;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 0;
-    border: 1px solid red;
-    height: 100%;
-    transition: .5s ease;
-}
-
-.project-wrapper:hover .overlay {
-    width: 100%;
-    left: 0;
-}
-
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 1px solid red;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    padding: 15px 50px 15px 15px;
-}
-
 /* Work */
 .work-wrapper {
     position: relative;
 }
+
 .work-wrapper .work--title {
     text-transform: uppercase;
     padding: 5px 10px;
@@ -271,9 +228,15 @@ li {
 
 }
 
-/* Class name via Modernizr */
+.card-img-overlay {
+    background:  rgba(0, 0, 0, 0.6);
+}
 
 
+.card:hover .card-img-overlay.display__none {
+    display: flex;
+    flex-direction: column;
+}
 
 @media(min-width: 768px) {
     .work-wrapper {
@@ -293,12 +256,37 @@ li {
         -ms-transform: rotate(270deg);
         -o-transform: rotate(270deg);
     }
+    .card .card-img-overlay.display__none {
+        display: none;
+    }
 }
 
-.card .card-img-overlay.display__none {
+.project-card .card-img-overlay .card-title.modify__title {
+    font-size: clamp(1rem, 2.5vw, 4rem);
+}
+
+.project-card .card-img-overlay .card-text.modify__text {
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+}
+
+.disabled-link {
+    pointer-events: none;
+}
+
+.card.project-card {
+    height: 345px
+}
+.project-card svg {
+    color: white;
+}
+/*
+
+.card .card-img-overlay .card-title {
     display: none;
 }
+*/
 
-.card:hover .card-img-overlay.display__none {
-    display: block;
-}
+
+
+
+

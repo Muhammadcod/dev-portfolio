@@ -1,17 +1,18 @@
 import React from "react"
 import Img from "gatsby-image"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { graphql, useStaticQuery } from "gatsby"
+/*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
   faGithub,
   faLinkedin,
   faInstagram
-} from "@fortawesome/free-brands-svg-icons"
+} from "@fortawesome/free-brands-svg-icons"*/
+import {faExternalLinkAlt  } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { faCodeBranch, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -39,7 +40,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section className=' container d-flex justify-content-center align-items-center'
+      <section className= "container d-flex justify-content-center align-items-center"
                style={{ minHeight: `100vh` }}>
         <div className="text-center">
           <div className="card-body">
@@ -50,11 +51,13 @@ const IndexPage = () => {
               everything in between.
             </p>
           </div>
-          <button>Hire Me</button>
+          <a href="mailto:adebayomuhammad47@gmail.com">
+            <button className='btn btn-light' >Hire Me</button>
+          </a>
         </div>
       </section>
 
-      <section className='work-wrapper container'>
+      <section id='work' className='work-wrapper container'>
         <div className='work--title'>
           <h3>Works</h3>
         </div>
@@ -62,14 +65,22 @@ const IndexPage = () => {
         <section className='container project-container'>
           <div className='row row-cols-1 row-cols-md-2'>
             {data.allInfoJson.nodes.map(item => (
-              <div className='col mb-4' key={item.id}>
-                <div className="card bg-dark text-white" key={item.id}>
-                  <Img fluid={item.src.childImageSharp.fluid} className="card-img" alt="item" />
-                  <div className="card-img-overlay display__none ">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                    <p className="card-text">Last updated 3 mins ago</p>
+              <div className='col mb-4 ' key={item.id}>
+                <div className="card project-card bg-light text-white" key={item.id}>
+                  <Img fluid={item.src.childImageSharp.fluid} className="card-img" alt={item.title} />
+                  <div className="card-img-overlay display__none">
+                    <h5 className="card-title modify__title d-flex justify-content-between">
+                      {item.title}
+                      <a href={item.url[0] ? item.url[0] : '/'}
+                         className={`button ${item.url[0] ? "" : "disabled-link"}`}>
+                        <FontAwesomeIcon icon={faExternalLinkAlt} className='' />
+                      </a>
+                    </h5>
+                    <p className="card-text modify__text" style={{width: `388px`}}>{item.description}</p>
+                    <a href={item.url[1] ? item.url[1] : '/'}
+                       className={`button ${item.url[1] ? "" : "disabled-link"}`}>
+                      <button className='project--links btn btn-light' >code</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -77,8 +88,6 @@ const IndexPage = () => {
           </div>
         </section>
       </section>
-
-
     </Layout>
   )
 }

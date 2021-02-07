@@ -35,7 +35,7 @@
     "id": "5",
     "title": "My Reads",
     "description": "A book tracking app with predefined book keeping categories",
-    "src": "../images/Book-4.png",
+    "src": "../images/Book-5.png",
     "url": ["https://warm-springs-43664.herokuapp.com", "https://github.com/Muhammadcod/myreads-bookshelf-app"],
     "tech": ["React", "React Router", "API"]
   },
@@ -63,5 +63,4 @@
     "url": ["https://expo.io/@mubhi/projects/mobile-flashcards","https://github.com/Muhammadcod/Native-apps"],
     "tech": ["React-native", "React Navigation", "Redux"]
   }
-
 ]
