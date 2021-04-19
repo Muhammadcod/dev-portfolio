@@ -1,13 +1,6 @@
 import React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql, useStaticQuery } from "gatsby"
-/*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faTwitter,
-  faGithub,
-  faLinkedin,
-  faInstagram
-} from "@fortawesome/free-brands-svg-icons"*/
+import { graphql } from "gatsby"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 
 import Layout from "../components/layout"
@@ -15,8 +8,7 @@ import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const IndexPage = ({ data }) => {
-  //   const image =
-  console.log(data)
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -102,7 +94,7 @@ export const pageQuery = graphql`
         description
         src {
           childImageSharp {
-            gatsbyImageData(formats: PNG, placeholder: BLURRED, height: 400)
+            gatsbyImageData(formats: PNG, placeholder: BLURRED)
           }
         }
       }

@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Admin Page",
     "description": "Engineer Team Admin Page",
-    "src": "../images/Engineer-Admin.png",
+    "src": "../images/FE-Admin.png",
     "url": ["https://boring-swirles-79b164.netlify.app", "https://github.com/Muhammadcod/Engineer-Task"],
     "tech": ["React", "Axios", "RestApi"]
   },
@@ -11,7 +11,7 @@
     "id": "2",
     "title": "Would You Rather App",
     "description": "A question based game app built as a requirement of the completion of the udacity react nanodegree program",
-    "src": "../images/would-you-rather.png",
+    "src": "../images/Would-you.png",
     "url": ["https://frosty-hodgkin-05e9fc.netlify.app", "https://github.com/Muhammadcod/would-you-rather"],
     "tech": ["React", "Redux", "Redux thunk", "React Router"]
   },
@@ -19,7 +19,7 @@
     "id": "3",
     "title": "PrivateLabelNG",
     "description": "A minimalist online fashion website showcasing company clothing lines, incorporated with a blog page of latest fashion trends.",
-    "src": "../images/private.png",
+    "src": "../images/Private-label.png",
     "url": ["https://privatelabelng.shop/", ""],
     "tech": ["Gatsby", "API"]
   },
@@ -27,7 +27,7 @@
     "id": "4",
     "title": "Github Clone",
     "description": "A Github clone",
-    "src": "../images/git.png",
+    "src": "../images/Git-clone.png",
     "url": ["https://goofy-ritchie-fefb85.netlify.app/", "https://github.com/Muhammadcod/git-clone"],
     "tech": ["HTML", "CSS", "JavaScript", "Graphql"]
   },
@@ -35,7 +35,7 @@
     "id": "5",
     "title": "My Reads",
     "description": "A book tracking app with predefined book keeping categories",
-    "src": "../images/Book-5.png",
+    "src": "../images/Book-tracking.png",
     "url": ["https://warm-springs-43664.herokuapp.com", "https://github.com/Muhammadcod/myreads-bookshelf-app"],
     "tech": ["React", "React Router", "API"]
   },
